@@ -1,0 +1,108 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reviews • StayHealthy UI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="shared.css">
+  <link rel="stylesheet" href="reviews.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="container inner">
+      <a class="brand" href="navbar.html"><span class="dot"></span> StayHealthy</a>
+      <nav aria-label="main">
+        <ul>
+          <li><a href="navbar.html">Home</a></li>
+          <li><a href="#">Appointments</a></li>
+          <li><a href="#">Health Blog</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+        </ul>
+      </nav>
+      <div class="auth">
+        <a class="btn-outline btn" href="signup.html">Sign Up</a>
+        <a class="btn" href="login.html">Login</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container" style="padding:28px 0 60px">
+    <section class="card" style="padding:18px">
+      <h3 style="margin:6px 0 4px">Your Doctors</h3>
+      <p class="muted" style="margin:0 0 16px">Provide reviews for doctors you've consulted with</p>
+      <div class="table">
+        <div class="thead">
+          <div>S.No</div><div>Doctor Name</div><div>Doctor Specialty</div><div>Provide Review</div><div>Review Given</div>
+        </div>
+        <div class="row">
+          <div>1</div>
+          <div><a href="#">Dr. John Doe</a></div>
+          <div><span class="badge">Cardiology</span></div>
+          <div><button class="btn">Give Review</button></div>
+          <div><span class="muted">Pending</span></div>
+        </div>
+        <div class="row">
+          <div>2</div>
+          <div><a href="#">Dr. Jane Smith</a></div>
+          <div><span class="badge">Dermatology</span></div>
+          <div><button class="btn" disabled style="opacity:.6;cursor:not-allowed">Review Given</button></div>
+          <div><span style="color:var(--success);display:flex;gap:6px;align-items:center">&#10003; Completed</span></div>
+        </div>
+        <div class="row">
+          <div>3</div>
+          <div><a href="#">Dr. Jiao Yang</a></div>
+          <div><span class="badge">Dentistry</span></div>
+          <div><button class="btn">Give Review</button></div>
+          <div><span class="muted">Pending</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section style="margin-top:26px;display:flex;justify-content:space-between;align-items:center">
+      <div>
+        <h3 style="margin:6px 0 4px">Recent Reviews</h3>
+        <p class="muted" style="margin:0">See what other patients are saying about our healthcare professionals</p>
+      </div>
+      <button class="btn-outline btn">Filter Reviews</button>
+    </section>
+
+    <section class="grid grid-3" style="margin-top:16px">
+      <article class="card review">
+        <div class="quote">“Dr. Jane Smith was very attentive and explained everything clearly. The treatment was effective and I saw improvement quickly.”</div>
+        <div class="rating" aria-label="rating 5"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span></div>
+        <div class="meta">
+          <div><strong>- Alice M.</strong></div>
+          <small>Review for <a href="#">Dr. Jane Smith</a>, Dermatology<br>March 15, 2024</small>
+        </div>
+      </article>
+
+      <article class="card review">
+        <div class="quote">“I had a great experience with Dr. Michael Brown. Highly recommend! The surgery went smoothly and recovery was faster than expected.”</div>
+        <div class="rating" aria-label="rating 4.5"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star">★</span></div>
+        <div class="meta">
+          <div><strong>- Brian K.</strong></div>
+          <small>Review for <a href="#">Dr. Michael Brown</a>, Orthopedics<br>March 10, 2024</small>
+        </div>
+      </article>
+
+      <article class="card review">
+        <div class="quote">“Excellent cardiologist! Very thorough examination and clear explanation of my condition. Made me feel comfortable throughout.”</div>
+        <div class="rating" aria-label="rating 5"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span></div>
+        <div class="meta">
+          <div><strong>- Sarah W.</strong></div>
+          <small>Review for <a href="#">Dr. John Doe</a>, Cardiology<br>March 8, 2024</small>
+        </div>
+      </article>
+    </section>
+
+    <section class="footer-cta" style="margin-top:28px">
+      <h3>Your Trust, Our Priority</h3>
+      <p>All reviews are verified and moderated to ensure authenticity. We’re committed to maintaining transparency and helping you make informed healthcare decisions.</p>
+    </section>
+  </main>
+</body>
+</html>

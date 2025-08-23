@@ -1,0 +1,13 @@
+
+.table{display:grid;gap:10px}
+.thead, .row{display:grid;grid-template-columns:60px 1.2fr 1fr 1.1fr 1fr;gap:10px;align-items:center}
+.thead{font-weight:700;color:var(--muted);padding:6px 8px}
+.row{background:#fff;border:1px solid var(--border);border-radius:12px;padding:10px}
+.review{padding:18px}
+.review .quote{min-height:96px;font-style:italic;color:#111827}
+.review .meta{margin-top:10px}
+@media (max-width: 860px){
+  .thead{display:none}
+  .row{grid-template-columns:1fr;gap:6px}
+  .row > div:nth-child(1){display:none}
+}

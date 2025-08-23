@@ -1,0 +1,55 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sign Up • StayHealthy UI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="shared.css">
+  <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="container inner">
+      <a class="brand" href="navbar.html"><span class="dot"></span> StayHealthy</a>
+      <div class="auth">
+        <a class="btn-outline btn" href="signup.html">Sign Up</a>
+        <a class="btn" href="login.html">Login</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container" style="padding:24px 0 60px">
+    <a href="navbar.html" class="muted" style="text-decoration:none">&larr; Back to Home</a>
+    <div class="card form">
+      <h2>Sign Up</h2>
+      <p class="muted">Create your account to get started with StayHealthy</p>
+      <form>
+        <label>Role</label>
+        <select required>
+          <option value="" selected disabled>Select your role</option>
+          <option>Patient</option>
+          <option>Doctor</option>
+          <option>Staff</option>
+        </select>
+        <label>Full Name</label>
+        <input class="input" type="text" placeholder="Enter your full name" required>
+        <label>Phone Number</label>
+        <input class="input" type="tel" placeholder="Enter your phone number" required>
+        <label>Email Address</label>
+        <input class="input" type="email" placeholder="Enter your email address" required>
+        <label>Password</label>
+        <input class="input" type="password" placeholder="Create a strong password" required>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:6px">
+          <button class="btn" type="submit" style="flex:1">Submit</button>
+          <button class="btn-outline btn" type="reset" style="flex:1">Reset</button>
+        </div>
+      </form>
+      <p class="muted center" style="gap:8px;margin:16px 0 4px">Already have an account? <a href="login.html">Login here</a></p>
+    </div>
+  </main>
+</body>
+</html>
